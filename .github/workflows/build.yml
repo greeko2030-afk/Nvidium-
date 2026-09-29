@@ -1,4 +1,4 @@
-name: Build Nvidium+
+name: Build Nvidium+ Addon
 on: [push, pull_request]
 
 jobs:
