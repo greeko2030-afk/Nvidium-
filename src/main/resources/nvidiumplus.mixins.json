@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.greekoasc.nvidiumplus.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "NvidiumShaderCheckMixin"
+  ],
+  "client": [
+    "NvidiumShaderCheckMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
