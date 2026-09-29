@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "nvidiumplus",
+  "version": "${version}",
+  "name": "Nvidium+",
+  "description": "An addon for Nvidium that forces it to stay active even when Iris shaders are enabled.",
+  "authors": [
+    "GreekoASC"
+  ],
+  "contact": {
+    "homepage": "https://github.com/GreekoASC/nvidium-plus",
+    "sources": "https://github.com/GreekoASC/nvidium-plus"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/nvidiumplus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.greekoasc.nvidiumplus.NvidiumPlus"
+    ]
+  },
+  "mixins": [
+    "nvidiumplus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21 <1.22",
+    "java": ">=21",
+    "nvidium": "*"
+  }
+}
