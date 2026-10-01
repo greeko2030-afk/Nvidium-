@@ -1,11 +1,12 @@
 package com.greekoasc.nvidiumplus.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-// Targeting the main Nvidium class where the activity check is performed
+@Pseudo
 @Mixin(targets = "me.cortex.nvidium.Nvidium", remap = false)
 public class NvidiumShaderCheckMixin {
 
